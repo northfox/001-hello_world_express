@@ -1,0 +1,18 @@
+# common
+.*~
+*~
+*.swp
+.DS_Store
+.idea
+.secret
+
+# minigulp
+README.html
+.idea
+.sass-cache
+node_modules
+bower_components
+lib
+
+# special
+*.sqlite3

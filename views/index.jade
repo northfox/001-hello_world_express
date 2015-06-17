@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+  ul
+    if content
+      li= content
+    each message in messages
+      li= message.content
+  
+  form(action="/", method="post")
+    input(type="text", name="content")
+    input(type="hidden", name="test", value="true")
+    input(type="submit", value="send")
